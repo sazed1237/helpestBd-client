@@ -4,7 +4,7 @@ body {
   font-family: "Jost", sans-serif;
 }
 
-nav {
+.navBar {
   z-index: 1000001 !important;
 }
 

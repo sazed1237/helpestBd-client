@@ -5,6 +5,7 @@ import { FaXmark } from "react-icons/fa6";
 import { Link } from 'react-scroll';
 import { useNavigate } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
+import HeadContact from '../../../components/HeadContact';
 
 const Navbar = () => {
 
@@ -26,10 +27,10 @@ const Navbar = () => {
 
 
     const navItems = <>
-        <li className='hover:text-tartiary cursor-pointer'><Link to={'overview'} spy={true} smooth={true} offset={-100} activeClass='active' >Overview</Link></li>
-        <li className='hover:text-tartiary cursor-pointer'><Link to={'feature'} spy={true} smooth={true} offset={-100} activeClass='active' >Feature</Link></li>
-        <li className='hover:text-tartiary cursor-pointer'><Link to={'about'} spy={true} smooth={true} offset={-100} activeClass='active' >About</Link></li>
-        <li className='hover:text-tartiary cursor-pointer'><Link to={'pricing'} spy={true} smooth={true} offset={-100} activeClass='active' >Pricing</Link></li>
+        <li className='hover:text-tartiary cursor-pointer'><Link onClick={toggleMenu} to={'overview'} spy={true} smooth={true} offset={-100} activeClass='active' >Overview</Link></li>
+        <li className='hover:text-tartiary cursor-pointer'><Link onClick={toggleMenu} to={'feature'} spy={true} smooth={true} offset={-100} activeClass='active' >Feature</Link></li>
+        <li className='hover:text-tartiary cursor-pointer'><Link onClick={toggleMenu} to={'about'} spy={true} smooth={true} offset={-100} activeClass='active' >About</Link></li>
+        <li className='hover:text-tartiary cursor-pointer'><Link onClick={toggleMenu} to={'pricing'} spy={true} smooth={true} offset={-100} activeClass='active' >Pricing</Link></li>
     </>
 
     const userProfile = <>
@@ -47,8 +48,9 @@ const Navbar = () => {
     </>
 
     return (
-        <>
-            <nav className='bg-white md:px-14 p-4 max-w-screen-2xl mx-auto text-primary fixed top-0 left-0 right-0 border-b'>
+        <div className=' navBar fixed top-0 left-0 right-0'>
+            <HeadContact></HeadContact>
+            <nav className='bg-white md:px-14 p-4 max-w-screen-2xl mx-auto text-primary navBar  border-b'>
                 <div className='container mx-auto flex items-center justify-between text-lg font-medium'>
 
                     <div className='flex space-x-14 items-center'>
@@ -80,14 +82,14 @@ const Navbar = () => {
                 </div>
             </nav>
 
-            <div className={`space-y-4 px-4 pt-20 pb-5 text-lg bg-secondary ${isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"}`}>
+            <div className={`space-y-4 px-4 pt-5 pb-5 text-lg bg-secondary ${isMenuOpen ? "block" : "hidden"}`}>
                 <ul className='space-y-4 text-white'>
                     {navItems}
                 </ul>
                 {userProfile}
             </div>
 
-        </>
+        </div>
 
     );
 };
