@@ -9,9 +9,9 @@ import { fadeIn } from '../../../utils/variants';
 
 const About = () => {
     return (
-        <div className='space-y-10' id='about'>
+        <div className='space-y-10  px-6' id='about'>
             {/* First part */}
-            <div className=' flex flex-col md:flex-row justify-between items-center gap-10'>
+            <div className=' flex flex-col md:flex-row justify-between items-center gap-8'>
                 {/* about image */}
                 <motion.div
                     variants={fadeIn("right", 0.2)}
@@ -30,10 +30,11 @@ const About = () => {
                     whileInView={"show"}
                     viewport={{ once: false, amount: 0.7 }}
 
-                    className='md:w-2/5'>
-                    <h2 className='text-primary md:text-5xl text-3xl font-bold mb-4 leading-normal'>voluptatem quas nesciunt asperiores quasi illo?</h2>
-                    <h4 className='text-secondary md:text-3xl text-xl font-semibold '>Our Mission</h4>
-                    <p className='text-base text-tartiary pt-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores sit, molestiae modi nesciunt sequi nulla soluta doloremque quaerat atque enim aut adipisci tempora dolore magnam quasi magni voluptates. Illo, adipisci!</p>
+                    className='md:w-2/5'
+                >
+                    <h2 className='text-primary md:text-5xl text-3xl  font-bold mb-4 leading-normal'>voluptatem quas nesciunt asperiores quasi illo?</h2>
+                    <h4 className='text-secondary md:text-3xl text-sm font-semibold '>Our Mission</h4>
+                    <p className='text-base text-tartiary  pt-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores sit, molestiae modi nesciunt sequi nulla soluta doloremque quaerat atque enim aut adipisci tempora dolore magnam quasi magni voluptates. Illo, adipisci!</p>
 
                     <button className='btnPrimary mt-10'>Read More</button>
                 </motion.div>
@@ -48,7 +49,8 @@ const About = () => {
                     whileInView={"show"}
                     viewport={{ once: false, amount: 0.7 }}
 
-                    className='md:w-1/2' >
+                    className='md:w-1/2'
+                >
                     <img src={aboutImg2} alt="" />
                 </motion.div>
 
@@ -59,10 +61,11 @@ const About = () => {
                     whileInView={"show"}
                     viewport={{ once: false, amount: 0.7 }}
 
-                    className='md:w-2/5'>
+                    className='md:w-2/5'
+                >
                     <h2 className='text-primary md:text-5xl text-3xl font-bold mb-4 leading-normal'>nesciunt asperiores quasi illo?</h2>
                     <h4 className='text-secondary md:text-3xl text-xl font-semibold '>Our Vision</h4>
-                    <p className='text-base text-tartiary pt-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores sit, molestiae modi nesciunt sequi nulla soluta doloremque quaerat atque enim aut adipisci tempora dolore magnam quasi magni voluptates. Illo, adipisci!</p>
+                    <p className='text-base text-tartiary  pt-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores sit, molestiae modi nesciunt sequi nulla soluta doloremque quaerat atque enim aut adipisci tempora dolore magnam quasi magni voluptates. Illo, adipisci!</p>
 
                     <button className='btnPrimary mt-10'>Read More</button>
                 </motion.div>
