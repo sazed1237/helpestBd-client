@@ -9,7 +9,7 @@ import { fadeIn } from '../../../utils/variants';
 
 const About = () => {
     return (
-        <div className='space-y-10  px-6' id='about'>
+        <div className='space-y-10  px-6' id='about'> 
             {/* First part */}
             <div className=' flex flex-col md:flex-row justify-between items-center gap-8'>
                 {/* about image */}

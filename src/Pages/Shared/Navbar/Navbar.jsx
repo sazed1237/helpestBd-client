@@ -8,8 +8,8 @@ import useAuth from '../../../hooks/useAuth';
 import HeadContact from '../../../components/HeadContact';
 
 const Navbar = () => {
-
-    const [isMenuOpen, setIsMenuOpen] = useState(false)
+ 
+    const [isMenuOpen, setIsMenuOpen] = useState(false) 
     const navigate = useNavigate()
     const { user, logOut } = useAuth()
 

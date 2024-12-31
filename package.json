@@ -12,6 +12,7 @@
   "dependencies": {
     "firebase": "^10.11.0",
     "framer-motion": "^11.1.7",
+    "helpestbd-client": "file:",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.4",
     "react": "^18.2.0",

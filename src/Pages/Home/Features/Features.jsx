@@ -52,8 +52,6 @@ const Features = () => {
                         </div>
                     </div>
                 </motion.div>
-
-
             </div>
         </div>
     );

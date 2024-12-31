@@ -56,12 +56,12 @@ const Footer = () => {
             <hr />
 
             <div className='flex flex-col sm:flex-row sm:items-center gap-8 justify-between my-6'>
-                <p className='flex items-center gap-2'><FaRegCopyright /> <span>Sazed Creation's 2024. All rights reserved.</span></p>
+                <p className='flex items-center gap-2'><FaRegCopyright /> <span><a href="https://sazedulislam.netlify.app" target='_blank' >Sazed Creation's</a> 2024. All rights reserved.</span></p>
                 <div className='flex space-x-3'>
-                    <a href=""><FaFacebookSquare className='h-8 w-8 hover:-translate-y-3 transition-all duration-300  ' /> </a>
-                    <a href=""><FaInstagramSquare className='h-8 w-8 hover:-translate-y-3 transition-all duration-300  ' /> </a>
-                    <a href=""><FaTwitterSquare className='h-8 w-8 hover:-translate-y-3 transition-all duration-300  ' /> </a>
-                    <a href=""><FaLinkedin className='h-8 w-8 hover:-translate-y-3 transition-all duration-300  ' /> </a>
+                    <a href="#"><FaFacebookSquare className='h-8 w-8 hover:-translate-y-3 transition-all duration-300  ' /> </a>
+                    <a href="#"><FaInstagramSquare className='h-8 w-8 hover:-translate-y-3 transition-all duration-300  ' /> </a>
+                    <a href="#"><FaTwitterSquare className='h-8 w-8 hover:-translate-y-3 transition-all duration-300  ' /> </a>
+                    <a href="#"><FaLinkedin className='h-8 w-8 hover:-translate-y-3 transition-all duration-300  ' /> </a>
                 </div>
             </div>
         </div>
